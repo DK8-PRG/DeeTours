@@ -82,7 +82,7 @@ To get a local copy up and running, follow these steps:
 
     ```bash
     npm run dev
-  The server will start on http://localhost:5000.
+
 
 ## Usage
 
