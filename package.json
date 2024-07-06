@@ -1,0 +1,30 @@
+{
+  "name": "deetours",
+  "version": "1.0.0",
+  "description": "a full stack web application for booking tours",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DK8-PRG/DeeTours.git"
+  },
+  "keywords": [
+    "tour",
+    "booking",
+    "travel",
+    "nodejs",
+    "express",
+    "mongodb"
+  ],
+  "author": "KimHoang Duong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DK8-PRG/DeeTours/issues"
+  },
+  "homepage": "https://github.com/DK8-PRG/DeeTours#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

@@ -1,0 +1,471 @@
+[
+  {
+    "startLocation": {
+      "description": "Barcelona, Spain",
+      "type": "Point",
+      "coordinates": [2.173404, 41.385064],
+      "address": "Passeig de Gràcia, Barcelona, Spain"
+    },
+    "ratingsAverage": 4.8,
+    "ratingsQuantity": 6,
+    "images": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"],
+    "startDates": [
+      "2024-06-19T09:00:00.000Z",
+      "2024-07-20T09:00:00.000Z",
+      "2024-08-18T09:00:00.000Z"
+    ],
+    "_id": "5c88fa8cf4afda39709c2955",
+    "name": "The Mediterranean Explorer",
+    "duration": 7,
+    "maxGroupSize": 15,
+    "difficulty": "medium",
+    "guides": ["5c8a22c62f8fb814b56fa18b", "5c8a1f4e2f8fb814b56fa185"],
+    "price": 497,
+    "summary": "Exploring the stunning Mediterranean coast by foot and by boat",
+    "description": "Discover the beauty of the Mediterranean coastline with our exclusive tour. Enjoy the scenic views and indulge in local delicacies as we sail and hike along the coast. Perfect for adventurers looking for a mix of relaxation and excitement.",
+    "imageCover": "tour-2-cover.jpg",
+    "locations": [
+      {
+        "_id": "5c88fa8cf4afda39709c2959",
+        "description": "Barceloneta Beach",
+        "type": "Point",
+        "coordinates": [2.192847, 41.378867],
+        "day": 1
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2958",
+        "description": "Costa Brava",
+        "type": "Point",
+        "coordinates": [3.060667, 41.894519],
+        "day": 2
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2957",
+        "description": "Cap de Creus",
+        "type": "Point",
+        "coordinates": [3.318161, 42.321555],
+        "day": 3
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2956",
+        "description": "Menorca",
+        "type": "Point",
+        "coordinates": [4.076639, 39.888361],
+        "day": 5
+      }
+    ]
+  },
+  {
+    "startLocation": {
+      "description": "Innsbruck, Austria",
+      "type": "Point",
+      "coordinates": [11.404102, 47.269212],
+      "address": "Maria-Theresien-Straße, Innsbruck, Austria"
+    },
+    "ratingsAverage": 5,
+    "ratingsQuantity": 9,
+    "images": ["tour-1-1.jpg", "tour-1-2.jpg", "tour-1-3.jpg"],
+    "startDates": [
+      "2024-04-25T09:00:00.000Z",
+      "2024-07-20T09:00:00.000Z",
+      "2024-10-05T09:00:00.000Z"
+    ],
+    "_id": "5c88fa8cf4afda39709c2951",
+    "name": "The Alpine Hiker",
+    "duration": 5,
+    "maxGroupSize": 25,
+    "difficulty": "easy",
+    "guides": [
+      "5c8a21d02f8fb814b56fa189",
+      "5c8a201e2f8fb814b56fa186",
+      "5c8a1f292f8fb814b56fa184"
+    ],
+    "price": 397,
+    "summary": "Breathtaking hike through the Austrian Alps",
+    "description": "Experience the majestic beauty of the Austrian Alps on this gentle hiking tour. Perfect for nature enthusiasts, this tour offers a blend of scenic landscapes, tranquil forests, and local wildlife.",
+    "imageCover": "tour-1-cover.jpg",
+    "locations": [
+      {
+        "_id": "5c88fa8cf4afda39709c2954",
+        "description": "Stubai Valley",
+        "type": "Point",
+        "coordinates": [11.305191, 47.104981],
+        "day": 1
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2953",
+        "description": "Zillertal Alps",
+        "type": "Point",
+        "coordinates": [11.819602, 47.070343],
+        "day": 3
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2952",
+        "description": "Hohe Tauern National Park",
+        "type": "Point",
+        "coordinates": [12.642516, 47.084173],
+        "day": 5
+      }
+    ]
+  },
+  {
+    "startLocation": {
+      "description": "Chamonix, France",
+      "type": "Point",
+      "coordinates": [6.869433, 45.923697],
+      "address": "100 Place de l'Église, 74400 Chamonix-Mont-Blanc, France"
+    },
+    "ratingsAverage": 4.5,
+    "ratingsQuantity": 6,
+    "images": ["tour-3-1.jpg", "tour-3-2.jpg", "tour-3-3.jpg"],
+    "startDates": [
+      "2024-01-05T10:00:00.000Z",
+      "2024-02-12T10:00:00.000Z",
+      "2025-01-06T10:00:00.000Z"
+    ],
+    "_id": "5c88fa8cf4afda39709c295a",
+    "name": "The Snow Adventurer",
+    "duration": 4,
+    "maxGroupSize": 10,
+    "difficulty": "difficult",
+    "guides": [
+      "5c8a21d02f8fb814b56fa189",
+      "5c8a23412f8fb814b56fa18c",
+      "5c8a1f4e2f8fb814b56fa185"
+    ],
+    "price": 997,
+    "summary": "Exciting adventure in the snow with skiing and snowboarding",
+    "description": "Join us for an adrenaline-filled adventure in the snow-covered mountains of Chamonix. Perfect for experienced skiers and snowboarders, this tour offers challenging slopes and breathtaking views.",
+    "imageCover": "tour-3-cover.jpg",
+    "locations": [
+      {
+        "_id": "5c88fa8cf4afda39709c295c",
+        "description": "Mont Blanc",
+        "type": "Point",
+        "coordinates": [6.864717, 45.832621],
+        "day": 1
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c295b",
+        "description": "Aiguille du Midi",
+        "type": "Point",
+        "coordinates": [6.887951, 45.87929],
+        "day": 2
+      }
+    ]
+  },
+  {
+    "startLocation": {
+      "description": "Zurich, Switzerland",
+      "type": "Point",
+      "coordinates": [8.541694, 47.376886],
+      "address": "Bahnhofstrasse, Zurich, Switzerland"
+    },
+    "ratingsAverage": 4.7,
+    "ratingsQuantity": 7,
+    "images": ["tour-5-1.jpg", "tour-5-2.jpg", "tour-5-3.jpg"],
+    "startDates": [
+      "2024-08-05T09:00:00.000Z",
+      "2024-03-20T10:00:00.000Z",
+      "2025-08-12T09:00:00.000Z"
+    ],
+    "_id": "5c88fa8cf4afda39709c2961",
+    "name": "The Alpine Camper",
+    "duration": 10,
+    "maxGroupSize": 15,
+    "difficulty": "medium",
+    "guides": [
+      "5c8a21f22f8fb814b56fa18a",
+      "5c8a23412f8fb814b56fa18c",
+      "5c8a201e2f8fb814b56fa186"
+    ],
+    "price": 1497,
+    "summary": "Camping in the beautiful Swiss Alps",
+    "description": "Immerse yourself in the serene beauty of the Swiss Alps with this 10-day camping adventure. Explore scenic trails, camp under the stars, and experience the tranquility of nature.",
+    "imageCover": "tour-5-cover.jpg",
+    "locations": [
+      {
+        "_id": "5c88fa8cf4afda39709c2965",
+        "description": "Zermatt",
+        "type": "Point",
+        "coordinates": [7.748, 46.0207],
+        "day": 1
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2964",
+        "description": "Lake Geneva",
+        "type": "Point",
+        "coordinates": [6.627, 46.498],
+        "day": 4
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2963",
+        "description": "Interlaken",
+        "type": "Point",
+        "coordinates": [7.852, 46.686],
+        "day": 5
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2962",
+        "description": "Jungfrau Region",
+        "type": "Point",
+        "coordinates": [7.961, 46.595],
+        "day": 9
+      }
+    ]
+  },
+  {
+    "startLocation": {
+      "description": "Paris, France",
+      "type": "Point",
+      "coordinates": [2.352222, 48.856614],
+      "address": "Champs-Élysées, Paris, France"
+    },
+    "ratingsAverage": 4.6,
+    "ratingsQuantity": 5,
+    "images": ["tour-4-1.jpg", "tour-4-2.jpg", "tour-4-3.jpg"],
+    "startDates": [
+      "2024-03-11T10:00:00.000Z",
+      "2024-05-02T09:00:00.000Z",
+      "2024-06-09T09:00:00.000Z"
+    ],
+    "_id": "5c88fa8cf4afda39709c295d",
+    "name": "The City Wanderer",
+    "duration": 9,
+    "maxGroupSize": 20,
+    "difficulty": "easy",
+    "guides": ["5c8a22c62f8fb814b56fa18b", "5c8a201e2f8fb814b56fa186"],
+    "price": 1197,
+    "summary": "Living the life of Wanderlust in Europe’s most beautiful cities",
+    "description": "Explore the most iconic cities in Europe with this 9-day tour. Discover historical landmarks, indulge in local cuisine, and experience the vibrant culture of each destination.",
+    "imageCover": "tour-4-cover.jpg",
+    "locations": [
+      {
+        "_id": "5c88fa8cf4afda39709c2960",
+        "description": "Paris",
+        "type": "Point",
+        "coordinates": [2.352222, 48.856614],
+        "day": 1
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c295f",
+        "description": "Rome",
+        "type": "Point",
+        "coordinates": [12.496366, 41.902783],
+        "day": 3
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c295e",
+        "description": "Barcelona",
+        "type": "Point",
+        "coordinates": [2.173404, 41.385064],
+        "day": 5
+      }
+    ]
+  },
+  {
+    "startLocation": {
+      "description": "Lisbon, Portugal",
+      "type": "Point",
+      "coordinates": [-9.139337, 38.722252],
+      "address": "Avenida da Liberdade, Lisbon, Portugal"
+    },
+    "ratingsAverage": 3.9,
+    "ratingsQuantity": 7,
+    "images": ["tour-6-1.jpg", "tour-6-2.jpg", "tour-6-3.jpg"],
+    "startDates": [
+      "2024-07-19T09:00:00.000Z",
+      "2024-09-06T09:00:00.000Z",
+      "2025-03-18T10:00:00.000Z"
+    ],
+    "_id": "5c88fa8cf4afda39709c2966",
+    "name": "The Sports Lover",
+    "duration": 14,
+    "maxGroupSize": 8,
+    "difficulty": "difficult",
+    "guides": [
+      "5c8a21f22f8fb814b56fa18a",
+      "5c8a1f292f8fb814b56fa184",
+      "5c8a1f4e2f8fb814b56fa185"
+    ],
+    "price": 2997,
+    "summary": "Surfing, skating, parajumping, rock climbing and more, all in one tour",
+    "description": "This tour is designed for adventure sports enthusiasts looking for an action-packed experience. Enjoy surfing, skating, parajumping, and rock climbing in some of the most beautiful locations in Europe.",
+    "imageCover": "tour-6-cover.jpg",
+    "locations": [
+      {
+        "_id": "5c88fa8cf4afda39709c296b",
+        "description": "Praia de Carcavelos",
+        "type": "Point",
+        "coordinates": [-9.3389, 38.6901],
+        "day": 1
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c296a",
+        "description": "Cascais Skatepark",
+        "type": "Point",
+        "coordinates": [-9.4212, 38.6969],
+        "day": 4
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2969",
+        "description": "Algarve Skydiving",
+        "type": "Point",
+        "coordinates": [-8.1256, 37.0179],
+        "day": 6
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2968",
+        "description": "Serra da Estrela",
+        "type": "Point",
+        "coordinates": [-7.6115, 40.3215],
+        "day": 7
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2967",
+        "description": "Picos de Europa",
+        "type": "Point",
+        "coordinates": [-4.8389, 43.1878],
+        "day": 10
+      }
+    ]
+  },
+  {
+    "startLocation": {
+      "description": "Bordeaux, France",
+      "type": "Point",
+      "coordinates": [-0.57918, 44.837789],
+      "address": "Place de la Bourse, Bordeaux, France"
+    },
+    "ratingsAverage": 4.4,
+    "ratingsQuantity": 7,
+    "images": ["tour-7-1.jpg", "tour-7-2.jpg", "tour-7-3.jpg"],
+    "startDates": [
+      "2024-02-12T10:00:00.000Z",
+      "2024-04-14T09:00:00.000Z",
+      "2024-09-01T09:00:00.000Z"
+    ],
+    "_id": "5c88fa8cf4afda39709c296c",
+    "name": "The Wine Taster",
+    "duration": 5,
+    "maxGroupSize": 8,
+    "difficulty": "easy",
+    "guides": ["5c8a22c62f8fb814b56fa18b", "5c8a23412f8fb814b56fa18c"],
+    "price": 1997,
+    "summary": "Exquisite wines, scenic views, exclusive barrel tastings,  and much more",
+    "description": "Indulge in the finest wines of Bordeaux with this exclusive tour. Enjoy scenic vineyard views, private tastings, and learn from expert guides about the art of winemaking.",
+    "imageCover": "tour-7-cover.jpg",
+    "locations": [
+      {
+        "_id": "5c88fa8cf4afda39709c296f",
+        "description": "Château Margaux",
+        "type": "Point",
+        "coordinates": [-0.6836, 45.0415],
+        "day": 1
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c296e",
+        "description": "Saint-Émilion",
+        "type": "Point",
+        "coordinates": [-0.1557, 44.8916],
+        "day": 3
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c296d",
+        "description": "Pomerol",
+        "type": "Point",
+        "coordinates": [-0.2264, 44.9335],
+        "day": 5
+      }
+    ]
+  },
+  {
+    "startLocation": {
+      "description": "Tenerife, Spain",
+      "type": "Point",
+      "coordinates": [-16.6291, 28.2916],
+      "address": "Santa Cruz de Tenerife, Spain"
+    },
+    "ratingsAverage": 4.8,
+    "ratingsQuantity": 6,
+    "images": ["tour-8-1.jpg", "tour-8-2.jpg", "tour-8-3.jpg"],
+    "startDates": [
+      "2024-03-23T10:00:00.000Z",
+      "2024-10-25T09:00:00.000Z",
+      "2025-01-30T10:00:00.000Z"
+    ],
+    "_id": "5c88fa8cf4afda39709c2970",
+    "name": "The Star Gazer",
+    "duration": 9,
+    "maxGroupSize": 8,
+    "difficulty": "medium",
+    "guides": ["5c8a21d02f8fb814b56fa189", "5c8a1f292f8fb814b56fa184"],
+    "price": 2997,
+    "summary": "The most remote and stunningly beautiful places for seeing the night sky",
+    "description": "Experience the best stargazing locations in Europe with this tour. Enjoy the clear night skies and learn about the constellations from expert guides.",
+    "imageCover": "tour-8-cover.jpg",
+    "locations": [
+      {
+        "_id": "5c88fa8cf4afda39709c2973",
+        "description": "Teide National Park",
+        "type": "Point",
+        "coordinates": [-16.639, 28.2725],
+        "day": 1
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2972",
+        "description": "La Palma",
+        "type": "Point",
+        "coordinates": [-17.8557, 28.7358],
+        "day": 3
+      },
+      {
+        "_id": "5c88fa8cf4afda39709c2971",
+        "description": "Roque de los Muchachos",
+        "type": "Point",
+        "coordinates": [-17.8916, 28.7541],
+        "day": 6
+      }
+    ]
+  },
+  {
+    "startLocation": {
+      "description": "Tromsø, Norway",
+      "type": "Point",
+      "coordinates": [18.9553, 69.6492],
+      "address": "Tromsø, Norway"
+    },
+    "ratingsAverage": 4.7,
+    "ratingsQuantity": 7,
+    "images": ["tour-9-1.jpg", "tour-9-2.jpg", "tour-9-3.jpg"],
+    "startDates": [
+      "2024-12-16T10:00:00.000Z",
+      "2025-01-16T10:00:00.000Z",
+      "2025-12-12T10:00:00.000Z"
+    ],
+    "_id": "5c88fa8cf4afda39709c2974",
+    "name": "The Northern Lights",
+    "duration": 3,
+    "maxGroupSize": 12,
+    "difficulty": "easy",
+    "guides": [
+      "5c8a21f22f8fb814b56fa18a",
+      "5c8a201e2f8fb814b56fa186",
+      "5c8a23412f8fb814b56fa18c"
+    ],
+    "price": 1497,
+    "summary": "Enjoy the Northern Lights in one of the best places in the world",
+    "description": "Join us for a breathtaking experience as we chase the Northern Lights in Tromsø. Learn about this natural phenomenon from our expert guides and capture stunning photos of the Aurora Borealis.",
+    "imageCover": "tour-9-cover.jpg",
+    "locations": [
+      {
+        "_id": "5c88fa8cf4afda39709c2975",
+        "description": "Tromsø",
+        "type": "Point",
+        "coordinates": [18.9553, 69.6492],
+        "day": 1
+      }
+    ]
+  }
+]
+
