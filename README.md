@@ -30,6 +30,7 @@ DeeTours is a comprehensive tour management platform that allows users to browse
 - [Mongoose](https://mongoosejs.com/)
 - [JWT](https://jwt.io/)
 - [Stripe](https://stripe.com/)
+- [Render](https://render.com/)
 
 ## Features
 
