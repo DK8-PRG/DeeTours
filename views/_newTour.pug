@@ -1,0 +1,37 @@
+extends base
+
+block content
+    main.main
+        .user-view
+            .user-view__form-container
+                h2.heading-secondary.ma-bt-md Create New Tour
+                form.form.form-tour-data(action='/api/v1/tours', method='POST')
+                    .form__group
+                        label.form__label(for='name') Tour Name
+                        input#name.form__input(type='text', required, name='name')
+                    .form__group
+                        label.form__label(for='duration') Duration (Days)
+                        input#duration.form__input(type='number', required, name='duration')
+                    .form__group
+                        label.form__label(for='maxGroupSize') Max Group Size
+                        input#maxGroupSize.form__input(type='number', required, name='maxGroupSize')
+                    .form__group
+                        label.form__label(for='difficulty') Difficulty
+                        select#difficulty.form__input(name='difficulty')
+                            option(value='easy') Easy
+                            option(value='medium') Medium
+                            option(value='difficult') Difficult
+                    .form__group
+                        label.form__label(for='price') Price
+                        input#price.form__input(type='number', required, name='price')
+                    .form__group
+                        label.form__label(for='summary') Summary
+                        textarea#summary.form__input(name='summary')
+                    .form__group
+                        label.form__label(for='description') Description
+                        textarea#description.form__input(name='description')
+                    .form__group
+                        label.form__label(for='imageCover') Cover Image
+                        input#imageCover.form__upload(type='file', accept='image/*', name='imageCover')
+                    .form__group.right
+                        button.btn.btn--small.btn--green(type='submit') Create Tour

@@ -1,0 +1,123 @@
+extends base
+mixin navItem(link, text, icon, active)
+    li(class= active ? 'side-nav--active' : '')
+        a(href=link)
+            svg
+            use(xlink:href=`img/icons.svg#icon-${icon}`)
+            | #{text}
+
+block content
+    main.main
+        .user-view
+            nav.user-view__menu
+                ul.side-nav
+                    +navItem('#', 'Setting', 'settings', true)
+                    +navItem('/my-tours', 'My booking', 'briefcase')
+                    +navItem('#', 'My reviews', 'star')
+                    +navItem('#', 'Billing', 'credit-card')
+
+                - if (user.role === 'admin')
+                    .admin-nav
+                        h5.admin-nav__heading Admin
+                        ul.side-nav
+                            +navItem('#', 'Manage Tours', 'map')
+                            +navItem('#', 'Manage Users', 'users')
+                            +navItem('#', 'Manage Reviews', 'star')
+                            +navItem('#', 'Manage bookings', 'briefcase')
+                            +navItem('#', 'Create Tours', 'map')
+
+                - if (user.role === 'guide')
+
+                    .guide-nav
+                        h5.guide-nav__heading Guide
+                        ul.side-nav
+                            +navItem('#', 'Manage Tours', 'map')
+                            +navItem('#', 'Manage bookings', 'briefcase')
+                            +navItem('#', 'Create Tours', 'map')
+
+            .user-view__content
+                .user-view__form-container
+                    h2.heading-secondary.ma-bt-md Your account settings
+                    //- WITHOUT API
+                    //- form.form.form-user-data(action='/submit-user-data' method='POST')
+
+                    //- WITH API
+                    form.form.form-user-data
+                        .form__group
+                            label.form__label(for='name') Name
+                            input#name.form__input(type='text', value=`${user.name}`, required, name='name')
+                        .form__group.ma-bt-md
+                            label.form__label(for='email') Email address
+                            input#email.form__input(type='email', value=`${user.email}`, required, name='email')
+                        .form__group.form__photo-upload
+                            img.form__user-photo(src=`/img/users/${user.photo}`, alt='User photo')
+                            input.form__upload(type='file', accept='image/*', id='photo', name='photo')
+                            label(for='photo') Choose new photo
+                        .form__group.right
+                            button.btn.btn--small.btn--green Save settings
+
+                .line &nbsp;
+
+                .user-view__form-container
+                    h2.heading-secondary.ma-bt-md Password change
+                    form.form.user-password-form
+                        .form__group
+                            label.form__label(for='password-current') Current password
+                            input#password-current.form__input(type='password', placeholder='••••••••', required, minlength='8')
+                        .form__group
+                            label.form__label(for='password') New password
+                            input#password.form__input(type='password', placeholder='••••••••', required, minlength='8')
+                        .form__group.ma-bt-lg
+                            label.form__label(for='password-confirm') Confirm password
+                            input#password-confirm.form__input(type='password', placeholder='••••••••', required, minlength='8')
+                        .form__group.right
+                            button.btn.btn--small.btn--green.btn--save-password Save password
+
+                .line &nbsp;
+                .user-view__form-container
+                    h2.heading-secondary.ma-bt-md Create New Tour
+                    form.form.form-tour-data(action='/api/v1/tours', method='POST' enctype='multipart/form-data')
+                        .form__group
+                            label.form__label(for='name') Tour Name
+                            input#name.form__input(type='text', required, name='name')
+                        .form__group
+                            label.form__label(for='duration') Duration (Days)
+                            input#duration.form__input(type='number', required, name='duration')
+                        .form__group
+                            label.form__label(for='maxGroupSize') Max Group Size
+                            input#maxGroupSize.form__input(type='number', required, name='maxGroupSize')
+                        .form__group
+                            label.form__label(for='difficulty') Difficulty
+                            select#difficulty.form__input(name='difficulty')
+                                option(value='easy') Easy
+                                option(value='medium') Medium
+                                option(value='difficult') Difficult
+                        .form__group
+                            label.form__label(for='price') Price
+                            input#price.form__input(type='number', required, name='price')
+                        .form__group
+                            label.form__label(for='summary') Summary
+                            textarea#summary.form__input(name='summary')
+                        .form__group
+                            label.form__label(for='description') Description
+                            textarea#description.form__input(name='description')
+                        .form__group
+                            label.form__label(for='imageCover') Cover Image
+                            input#imageCover.form__upload(type='file', accept='image/*', name='imageCover')
+                        .form__group
+                            label.form__label(for='images') Tour Images
+                            input#images.form__upload(type='file', accept='image/*', multiple, name='images')
+                        .form__group
+                            label.form__label(for='startDates') Start Dates
+                            input#startDates.form__input(type='date', multiple, name='startDates')
+                        .form__group
+                            label.form__label(for='startLocation') Start Location
+                            input#startLocation.form__input(type='text', name='startLocation')
+                        .form__group
+                            label.form__label(for='locations') Locations
+                            textarea#locations.form__input(name='locations' placeholder='List all locations separated by comma')
+                        .form__group
+                            label.form__label(for='guides') Guides IDs
+                            input#guides.form__input(type='text', name='guides' placeholder='Enter guide IDs separated by comma')
+                        .form__group.right
+                            button.btn.btn--small.btn--green(type='submit') Create Tour

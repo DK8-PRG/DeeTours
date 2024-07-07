@@ -1,0 +1,19 @@
+extends ./baseEmail
+
+block content
+  p Hello #{firstName},
+  p Welcome to DeeTours! We're thrilled to have you with us 🎉🙏
+  p We're a big family here, so please upload your profile picture to help us get to know you better.
+  
+  table.btn.btn-primary(role='presentation', border='0', cellpadding='0', cellspacing='0')
+    tbody
+      tr
+        td(align='left')
+          table(role='presentation', border='0', cellpadding='0', cellspacing='0')
+            tbody
+              tr
+                td
+                  a(href=url, target='_blank', style='display:inline-block; padding:10px 20px; margin-top:10px; color:#fff; background-color:#007bff; border-radius:5px; text-decoration:none; font-weight:bold;') Upload Profile Picture
+
+  p If you need any assistance with booking your next tour, feel free to reach out!
+  p(style='margin-top:30px; font-style:italic;') - Kim Hoang DUONG, CEO
