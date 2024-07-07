@@ -2,6 +2,12 @@
 
 Welcome to the DeeTours API! This project is a full-stack web application for managing and booking tours, built with Node.js, Express, and MongoDB.
 
+## API Documentation Link
+
+For a comprehensive overview of all available endpoints and detailed documentation, please visit our Postman collection:
+
+[DeeTours API Documentation](https://documenter.getpostman.com/view/15079099/2sA3e1Apce)
+
 ## Table of Contents
 
 - [About the Project](#about-the-project)
