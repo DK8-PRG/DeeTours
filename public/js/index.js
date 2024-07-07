@@ -29,24 +29,6 @@ if (loginForm) {
   });
 }
 
-// if (signupForm) {
-//   signupForm.addEventListener('submit', (e) => {
-//     e.preventDefault();
-//     const name = document.getElementById('name').value;
-//     const email = document.getElementById('email').value;
-//     const password = document.getElementById('password').value;
-//     const passwordConfirm = document.getElementById(
-//       'passwordConfirmation',
-//     ).value;
-//     const role = document.getElementById('role').value;
-//     if (password !== passwordConfirm) {
-//       showAlert('error', 'Passwords do not match');
-//       return;
-//     }
-
-//     signup(name, email, password, passwordConfirm, role);
-//   });
-// }
 if (signupForm) {
   signupForm.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -75,8 +57,7 @@ if (userDataForm) {
     form.append('name', document.getElementById('name').value);
     form.append('email', document.getElementById('email').value);
     form.append('photo', document.getElementById('photo').files[0]);
-    // const name = document.getElementById('name').value;
-    // const email = document.getElementById('email').value;
+
     updateSettings(form, 'data');
   });
 }

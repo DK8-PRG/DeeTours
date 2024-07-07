@@ -139,8 +139,7 @@ exports.getMonthlyPlan = catchAsync(async (req, res, next) => {
   });
 });
 
-// '/tours-within/:distance/center/:latlng/unit/:unit'
-// /tours-distance/233/center/-40,45/unit/mi
+
 
 exports.getToursWithin = catchAsync(async (req, res, next) => {
   const { distance, latlng, unit } = req.params;
